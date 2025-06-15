@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <cuda_runtime.h>
 #include <iostream>
+#include <cstdint>
+
 
 __global__ void write_pattern(uint32_t *buf, size_t n, uint32_t seed)
 {
